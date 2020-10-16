@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(105, 105, 105);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    height: 225px;
+    width: 225px;
+    background-color: rgb(68, 70, 70);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-dot {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: rgb(240, 112, 112);
+    border-radius: 50%;
+    animation-name: moveinout;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+
+.loading-dot:nth-child(2) {
+    background-color: rgb(35, 102, 245);
+    animation-delay: 0.5s;
+}
+
+.loading-dot:nth-child(3) {
+    background-color: rgb(240, 243, 35);
+    animation-delay: 1s;
+}
+
+@keyframes moveinout {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}

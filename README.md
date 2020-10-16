@@ -1,1 +1,1 @@
-# three-dots-loading
+# three-dots-loading animation
